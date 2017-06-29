@@ -59,5 +59,3 @@ Each method *requires* the following parameters:
 | `callback()` | A callback function in the form of callback(error, result) |
 
 Entities are not guaranteed to support all methods. Please consult the [SHAID API Documentation](https://smartdevicelink.com/en/docs/shaid) for more information and the available parameters for each supported operation.
-
-## License
