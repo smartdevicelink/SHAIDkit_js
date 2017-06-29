@@ -1,0 +1,34 @@
+{
+  "name": "shaidkit_js",
+  "version": "1.0.0",
+  "description": "A JavaScript API wrapper for SHAID",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smartdevicelink/SHAIDkit_js.git"
+  },
+  "keywords": [
+    "SmartDeviceLink",
+    "SDL",
+    "SHAID",
+    "SYNC",
+    "Ford",
+    "Toyota",
+    "policy",
+    "table"
+  ],
+  "author": "Nick Schwab <nick.schwab@livio.io> (https://nickschwab.com)",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/smartdevicelink/SHAIDkit_js/issues"
+  },
+  "homepage": "https://github.com/smartdevicelink/SHAIDkit_js#readme",
+  "dependencies": {
+    "lodash.get": "^4.4.2",
+    "request": "^2.81.0"
+  },
+  "false": {}
+}
