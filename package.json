@@ -1,6 +1,6 @@
 {
   "name": "shaidkit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A JavaScript API wrapper for SHAID",
   "main": "index.js",
   "scripts": {
