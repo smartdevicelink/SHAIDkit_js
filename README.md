@@ -17,7 +17,7 @@ var shaid = new shaidkit({
 });
 
 shaid.read(
-    shaid.entity.application,
+    shaid.entity["application"],
     {
         "limit": 2
     },
@@ -31,11 +31,12 @@ shaid.read(
 ## Entities
 The object type you wish to perform a CRUD (create, read, update, delete) operation on.
 
-Entities should be declared in your SHAIDkit calls via the `shaidkit.entity.[entity name]` enumeration helper.
+Entities should be declared in your SHAIDkit calls via the `shaidkit.entity["ENTITY NAME"]` enumeration helper.
 
 | Entity Name |
 | ------ |
 | application |
+| application/approval/vendor |
 | category |
 | country |
 | permission |
@@ -51,7 +52,7 @@ When using SHAIDkit, you specify the CRUD operation you wish to perform by acces
 | update() | Updates one or more records of the given `entity` |
 | delete() | Deletes one or more records of the given `entity` |
 
-Each method *requires* the following parameters:
+Each method **requires** the following parameters:
 | Parameter | Description |
 | ------ | ----------- |
 | `entity` | The `entity` you are attempting to operate on |

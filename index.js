@@ -7,6 +7,8 @@ class shaidkit {
     constructor(options = {}){
         this.entities = {
             "application": "application",
+            "application/approval/vendor": "application/approval/vendor",
+            "application/approval/sdlc": "application/approval/sdlc",
             "category": "category",
             "country": "country",
             "permission": "permission",
