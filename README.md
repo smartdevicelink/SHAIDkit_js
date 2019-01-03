@@ -41,6 +41,7 @@ Entities should be declared in your SHAIDkit calls via the `shaidkit.entity["ENT
 | country |
 | permission |
 | vendor |
+| vendor/key |
 
 ## Methods
 When using SHAIDkit, you specify the CRUD operation you wish to perform by accessing the corresponding method.
