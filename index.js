@@ -12,7 +12,8 @@ class shaidkit {
             "category": "category",
             "country": "country",
             "permission": "permission",
-            "vendor": "vendor"
+            "vendor": "vendor",
+            "vendor/key": "vendor/key"
         };
         this.base_url = options.base_url || "https://shaid.smartdevicelink.com";
         this.version = "v" + options.version;
