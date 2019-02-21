@@ -12,6 +12,7 @@ class shaidkit {
             "category": "category",
             "country": "country",
             "permission": "permission",
+            "service": "service",
             "vendor": "vendor",
             "vendor/key": "vendor/key"
         };
