@@ -20,6 +20,7 @@ class shaidkit {
         this.version = "v" + options.version;
         this.secret_key = options.secret_key || null;
         this.public_key = options.public_key || null;
+        this.sdl_server_version = options.sdl_server_version || null;
 
         if(isNaN(options.version)){
             throw new Error("'version' must be a valid integer. e.g. 2");
@@ -69,7 +70,8 @@ class shaidkit {
             "timeout": 10000,
             "headers": {
                 "public_key": this.public_key,
-                "secret_key": this.secret_key
+                "secret_key": this.secret_key,
+                "sdl_server_version": this.sdl_server_version
             },
             "qs": verb == "GET" ? params : null,
             "json": params
