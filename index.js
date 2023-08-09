@@ -52,15 +52,15 @@ class shaidkit {
     }
 
     create(entity, params, callback){
-        this.makeRequest("POST", entity, params, callback).end(JSON.stringify(params), 'utf-8');
+        this.makeRequest("POST", entity, params, callback).end(JSON.stringify(params), 'utf8');
     }
 
     update(entity, params, callback){
-        this.makeRequest("PUT", entity, params, callback).end(JSON.stringify(params), 'utf-8');
+        this.makeRequest("PUT", entity, params, callback).end(JSON.stringify(params), 'utf8');
     }
 
     delete(entity, params, callback){
-        this.makeRequest("DELETE", entity, params, callback).end(JSON.stringify(params), 'utf-8');
+        this.makeRequest("DELETE", entity, params, callback).end(JSON.stringify(params), 'utf8');
     }
 
     validateEntity(entity){
@@ -92,8 +92,11 @@ class shaidkit {
                 "public_key": this.public_key,
                 "secret_key": this.secret_key,
                 "sdl_server_version": this.sdl_server_version,
-                "Content-Type": "application/json; charset=UTF-8",
             },
+        }
+
+        if (verb != "GET") {
+            options.headers["Content-Type"] = "application/json; charset=UTF-8";
         }
 
         function responseCallback (response) {
